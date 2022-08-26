@@ -18,6 +18,7 @@ type APIClient struct {
 	// API Services
 	ConfirmAuthApi      *ConfirmAuthApiService
 	GenerateAuthDataApi *GenerateAuthDataApiService
+	DeleteAuthApi       *DeleteAuthApiService
 }
 
 type service struct {
@@ -34,6 +35,7 @@ func NewAPIClient(cfg *Configuration) *APIClient {
 	// API Services
 	c.ConfirmAuthApi = (*ConfirmAuthApiService)(&c.common)
 	c.GenerateAuthDataApi = (*GenerateAuthDataApiService)(&c.common)
+	c.DeleteAuthApi = (*DeleteAuthApiService)(&c.common)
 
 	return c
 }
