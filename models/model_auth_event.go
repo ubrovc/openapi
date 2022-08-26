@@ -19,4 +19,5 @@ type AuthEvent struct {
 	TimeStamp          *time.Time `json:"timeStamp" yaml:"timeStamp" bson:"timeStamp" mapstructure:"TimeStamp"`
 	AuthType           AuthType   `json:"authType" yaml:"authType" bson:"authType" mapstructure:"AuthType"`
 	ServingNetworkName string     `json:"servingNetworkName" yaml:"servingNetworkName" bson:"servingNetworkName" mapstructure:"ServingNetworkName"`
+	AuthRemovalInd     bool       `json:"authRemovalInd" yaml:"authRemovalInd" bson:"authRemovalInd" mapstructure:"AuthRemovalInd"`
 }
