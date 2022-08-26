@@ -4,7 +4,7 @@
  * UDM UE Authentication Service
  *
  * API version: 1.0.0
- * IT-5GC - manually created
+ * manually created
  */
 
 package Nudm_UEAuthentication
